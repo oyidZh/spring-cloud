@@ -1,0 +1,14 @@
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: user
+#    password: linkage
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false   #禁用eureka-server自己注册到本身
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka/  #http://user:linkage@localhost:8761/eureka/

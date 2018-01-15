@@ -1,0 +1,24 @@
+server:
+  port: 8863
+
+spring:
+  application:
+    name: spring-cloud-provider-user
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/springcloud
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    
+eureka:
+  client:
+    serviceUrl:
+      defalutZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/,http://peer3:8763/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}

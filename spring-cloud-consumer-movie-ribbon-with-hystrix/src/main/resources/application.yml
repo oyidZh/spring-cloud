@@ -1,0 +1,14 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: spring-cloud-consumer-movie-ribbon-with-hystrix
+eureka:
+  client:
+    serviceUrl:
+      defalutZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+    
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
