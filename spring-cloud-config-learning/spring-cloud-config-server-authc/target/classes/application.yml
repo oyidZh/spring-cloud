@@ -1,0 +1,15 @@
+server:
+  port: 8980
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/oyidZh/SpringCloudConfigFile
+  
+security:
+   basic:
+    enabled: true
+   user:
+    name: user
+    password: linkage

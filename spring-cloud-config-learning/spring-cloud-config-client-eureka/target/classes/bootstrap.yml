@@ -1,0 +1,19 @@
+server:
+  port: 8981
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: spring-cloud-config-server-eureka
+  application:
+    name: foobar
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:linkage@localhost:8761/eureka/
+  instance:
+    appname: spring-cloud-config-client-eureka
+    prefer-ip-address: true
+  
