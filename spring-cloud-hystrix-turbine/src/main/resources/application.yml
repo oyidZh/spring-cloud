@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: spring-cloud-hystrix-trubine
+server:
+  port: 8031
+eureka:
+  client:
+    serviceUrl:
+      defalutZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+turbine:
+  aggregator:
+# clusterConfig: SPRING-CLOUD-CONSUMER-MOVIE-RIBBON-WITH-HYSTRIX  #为单类服务集群提供监控方法
+# appConfig: spring-cloud-consumer-movie-ribbon-with-hystrix   #为单类服务集群提供监控方法
+    clusterConfig: default
+  appConfig: spring-cloud-consumer-movie-ribbon-with-hystrix,spring-cloud-consumer-movie-feign-with-hystrix
+  clusterNameExpression: "'default'"  #或者 new String("default")

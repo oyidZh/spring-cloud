@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: spring-cloud-consumer-movie-feign
+    name: spring-cloud-consumer-movie-feign-with-hystrix-factory
     
 eureka:
   client:

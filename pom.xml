@@ -20,8 +20,14 @@
 		<module>spring-cloud-consumer-movie-ribbon-properties-customizing</module>
 		<module>spring-cloud-consumer-movie-ribbon-with-hystrix</module>
 		<module>spring-cloud-consumer-movie-ribbon-without-eureka</module>
+		<module>spring-cloud-hystrix-dashboard</module>
+		<module>spring-cloud-hystrix-turbine</module>
 		<module>spring-cloud-provider-user</module>
 		<module>spring-cloud-discovery-eureka</module>
+		<module>spring-cloud-gateway-zuul</module>
+		<module>spring-cloud-gateway-zuul-filter</module>
+		<module>spring-cloud-gateway-zuul-fallback</module>
+		<module>spring-cloud-gateway-zuul-reg-exp</module>
 		<module>spring-cloud-discovery-eureka-ha</module>
 	</modules>
 	

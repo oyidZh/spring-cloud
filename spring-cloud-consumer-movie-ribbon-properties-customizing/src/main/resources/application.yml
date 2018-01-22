@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: spring-cloud-consumer-movie-ribbon
+    name: spring-cloud-consumer-movie-ribbon-properties-customizing
     
 eureka:
   client:
